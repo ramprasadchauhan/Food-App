@@ -22,10 +22,10 @@ function App() {
       <UserContext.Provider value={{ loggedInUser: userName, setUserName }}>
         {/* Ramprasad Chauhan */}
         <div className="app">
-          <Header />,
-          <Outlet />,
-          <Footer />
+          <Header />
+          <Outlet />
         </div>
+        <Footer />
       </UserContext.Provider>
     </Provider>
   );

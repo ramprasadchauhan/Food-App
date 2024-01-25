@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useDispatch } from "react-redux";
 import { CDN_URL } from "../utils/constant";
 import { addItem } from "../utils/cartSlice";

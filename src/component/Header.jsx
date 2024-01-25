@@ -27,23 +27,23 @@ const Header = () => {
       <div className="flex items-center">
         <ul className="flex p-4 ">
           <li className="px-1">Online Status: {onlineStatus ? "✅" : "🔴"} </li>
-          <li className="px-1">
+          <li className="px-1 hover:text-blue-500 hover:underline">
             <Link to="/"> Home </Link>
           </li>
-          <li className="px-1">
+          <li className="px-1 hover:text-blue-500 hover:underline">
             <Link to="/about"> About Us </Link>
           </li>
-          <li className="px-1">
+          <li className="px-1 hover:text-blue-500 hover:underline">
             <Link to="/contect"> Contect Us </Link>
           </li>
-          <li className="px-1">
+          <li className="px-1 hover:text-blue-500 hover:underline">
             <Link to="/grocery"> Grocery </Link>
           </li>
           <li className="px-1 font-bold hover:bg-red-300">
             <Link to="/cart">cart🛒{cartItems.length} Items</Link>
           </li>
           <button
-            className="px-1"
+            className="px-1 hover:text-blue-500 hover:underline"
             onClick={() => {
               btnName === "Login" ? setBtnName("Logout") : setBtnName("Login");
             }}

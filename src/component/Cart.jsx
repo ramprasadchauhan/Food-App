@@ -1,9 +1,7 @@
 import { useSelector } from "react-redux";
 import ItemList from "./ItemList";
 import { useDispatch } from "react-redux";
-import { addItem, clearCart } from "../utils/cartSlice";
-import { CDN_URL } from "../utils/constant";
-import Shimmer from "./Shimmer";
+import { clearCart } from "../utils/cartSlice";
 
 const Cart = (index) => {
   const cartItems = useSelector((store) => store.cart.items);

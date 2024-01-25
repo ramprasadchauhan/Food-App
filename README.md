@@ -1,8 +1,6 @@
-# React + Vite
+# Food-App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- I developed a dynamic food app using ReactJS with Tailwind CSS for styling, incorporating live data from the Swiggy
+  API. Redux toolkit is used for state management. The application features real-time information on various restaurants, each showcasing recommended dishes.
+  Users can effortlessly add or remove items from their carts, and additional functionalities include food search, and
+  sorting by ratings. For a more in-depth exploration of my coding projects and contributions

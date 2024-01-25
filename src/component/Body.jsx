@@ -176,7 +176,7 @@ const Body = () => {
         <div className="search p-4 m-4">
           <input
             type="text"
-            className="border border-solid border-black"
+            className="border border-solid border-black px-2 py-1 rounded"
             value={searchText}
             onChange={(e) => setSearchText(e.target.value)}
           />
@@ -185,7 +185,9 @@ const Body = () => {
             onClick={() => {
               console.log(searchText);
               const filteredRestaurent = listOfRestaurants.filter((res) =>
-                res?.card?.card?.restaurant?.info?.cuisines.includes(searchText)
+                res?.card?.card?.restaurant?.info?.cuisines?.includes(
+                  searchText
+                )
               );
               console.log(filteredRestaurent);
               setFilteredRestaurants(filteredRestaurent);
