@@ -3,7 +3,7 @@ import ItemList from "./ItemList";
 
 /* eslint-disable react/prop-types */
 const RestaurentCatagory = ({ data, showItem, setShowIndex, dumy }) => {
-  // console.log(data);
+  console.log(data);
   // const [showItem, setShowItem] = useState(false);
   const handleClick = () => {
     // setShowItem(!showItem);
