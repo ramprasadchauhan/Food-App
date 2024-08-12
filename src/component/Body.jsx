@@ -146,7 +146,7 @@ const Body = () => {
 
   const fetchData = async () => {
     const data = await fetch(
-      "https://www.swiggy.com/dapi/restaurants/search/v3?lat=23.239583&lng=77.442253&str=veg&trackingId=10027316-2a7f-a2b3-24c5-b5cd52ce65cb&submitAction=ENTER&queryUniqueId=c02448cf-cb07-3b82-4e5f-866f8caa7eac"
+      "/api/dapi/restaurants/search/v3?lat=23.239583&lng=77.442253&str=veg&trackingId=10027316-2a7f-a2b3-24c5-b5cd52ce65cb&submitAction=ENTER&queryUniqueId=c02448cf-cb07-3b82-4e5f-866f8caa7eac"
     );
     const jsonData = await data.json();
     console.log(jsonData);
@@ -184,6 +184,7 @@ const Body = () => {
             className="px-4 py-1 mx-3 rounded-lg bg-green-200"
             onClick={() => {
               console.log(searchText);
+              
               const filteredRestaurent = listOfRestaurants.filter((res) =>
                 res?.card?.card?.restaurant?.info?.cuisines?.includes(
                   searchText
